@@ -1,0 +1,104 @@
+﻿@model IEnumerable<proyectoFinal.Models.Entidades.Cliente>
+
+@{
+    ViewData["Title"] = "ListadoCliente";
+}
+
+<style>
+    .titulo {
+        margin-left: 10px;
+    }
+
+    .mensaje {
+        margin-left: 10px;
+    }
+
+</style>
+<div class="titulo">
+    <div class="col-md-12">
+        <h4>Listado de Clientes</h4>
+    </div>
+</div>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success">
+        <strong>¡Ok! -- </strong>@TempData["AlertMessage"]
+    </div>
+}
+
+<div class="mensaje">
+    <p>
+        <a onclick="showInPopup('@Url.Action("Crear", "Cliente", new { id = 0 }, Context.Request.Scheme)' , '')"
+           class="btn btn-sm btn-success text-white">
+            Agregar una Cliente  <i class="fa fa-plus-circle"></i>
+        </a>
+    </p>
+</div>
+<div class="col-md-12">
+    <div class="card">
+
+        <div class="card-body">
+            <table id="Cliente" class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Cédula</th>
+                        <th scope="col">Nombres</th>
+                        <th scope="col">Apellidos</th>
+                        <th scope="col">Dirección</th>
+                        <th scope="col">Teléfono</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var cliente in Model)
+                    {
+                        <tr>
+                            <th scope="row">@cliente.IdCliente</th>
+                            <td>@cliente.Cedula</td>
+                            <td>@cliente.Nombres</td>
+                            <td>@cliente.Apellidos</td>
+                            <td>@cliente.Direccion</td>
+                            <td>@cliente.Telefono</td>
+                            <td>
+                                <a onclick="showInPopup('@Url.Action("Editar", "Cliente", new { id = cliente.IdCliente }, Context.Request.Scheme)' , 'Actualizar Producto')"
+                                   class="btn btn-outline-warning btn-sm">
+                                    <i class="fa fa-pencil-alt"></i>
+                                </a>
+                                <button data-id="@cliente.IdCliente"
+                                        class="btn btn-outline-danger btn-sm deleteItem"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteDialog">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<partial name="_MostrarModal" />
+<partial name="_EliminarModal" />
+
+@section Scripts {
+    <script src="~/js/ShowModal.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#Cliente').DataTable({
+                "language": {
+                    url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+                }
+            });
+        });
+    </script>
+
+    <script>
+        sc_deleteDialog.openModal('deleteItem', true, 'btnYesDelete', '/Cliente/Eliminar/', false);
+    </script>
+}

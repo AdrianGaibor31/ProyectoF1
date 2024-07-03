@@ -1,0 +1,114 @@
+﻿@model proyectoFinal.Models.Entidades.Usuarios
+
+@{
+    ViewData["Title"] = "Perfil";
+}
+
+<style>
+
+   
+</style>
+
+<div class="titulo">
+    <div class="col-md-12">
+        <h4>Perfil de Usuario</h4>
+    </div>
+</div>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Ok!!---</strong> @TempData["AlertMessage"]
+    </div>
+}
+
+@if (Model != null)
+{
+    <div class="mensaje">
+        <div class="row">
+            <!-- Columna para la foto de perfil -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    @if (!string.IsNullOrEmpty(Model.URLFotoPerfil))
+                    {
+                        <img src="@Model.URLFotoPerfil" class="card-img-top" alt="Foto de perfil">
+                    }
+                </div>
+            </div>
+
+            <!-- Columna para la información del perfil -->
+            <div class="col-md-8">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">@Model.Nombre @Model.Apellido</h5>
+
+                        <!-- Información del perfil en lista -->
+                        <ul class="list-group">
+                            <li class="list-group-item">
+                                <i class="fa fa-user"></i> <strong>Nombre:</strong> @Model.Nombre
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-user"></i> <strong>Apellido:</strong> @Model.Apellido
+                            </li>
+                            <li class="list-group-item">
+                                <i class="fa fa-envelope"></i> <strong>Correo:</strong> @Model.correo
+                            </li>
+                            @if (Model.Roles != null && Model.Roles.Any())
+                            {
+                                <li class="list-group-item">
+                                    <i class="fa fa-users"></i> <strong>Roles:</strong> @string.Join(", ", Model.Roles)
+                                </li>
+                            }
+                            @if (!string.IsNullOrEmpty(Model.Cedula))
+                            {
+                                <li class="list-group-item">
+                                    <i class="fa fa-address-card"></i> <strong>Cédula:</strong> @Model.Cedula
+                                </li>
+                            }
+                            
+                        </ul>
+                        <br/>
+                        <a onclick="showInPopup('@Url.Action("Editar", "Usuarios", new { id = Model.UsuarioID }, Context.Request.Scheme)' , 'Actualizar Paciente')" class="btn btn-outline-warning btn-sm">
+                            <i class="fa fa-pencil-alt"></i> Editar
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p>No se encontraron datos de usuario.</p>
+}
+
+
+<partial name="_MostrarModal" />
+<partial name="_EliminarModal" />
+
+@section Scripts {
+    <script src="~/js/ShowModal.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#usuarios').DataTable({
+                "language": {
+                    url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+                },
+            });
+        });
+    </script>
+ 
+    <script>
+        $(document).ready(function () {
+            // Manejo del botón de alternancia
+            $("#toggleElements").click(function () {
+                $("#usuariosSection").toggle();
+            });
+        });
+    </script>
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>

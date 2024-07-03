@@ -1,0 +1,116 @@
+﻿@model IEnumerable<proyectoFinal.Models.Entidades.Factura>
+
+@{
+    ViewData["Title"] = "ListadoFactura";
+}
+
+<style>
+    .titulo {
+        margin-left: 10px;
+    }
+
+    .mensaje {
+        margin-left: 10px;
+    }
+
+</style>
+<div class="titulo">
+    <div class="col-md-12">
+        <h4>Listado de Facturas</h4>
+    </div>
+</div>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success">
+        <strong>¡Ok! -- </strong>@TempData["AlertMessage"]
+    </div>
+}
+
+<div class="mensaje">
+    <p>
+        <a onclick="showInPopup('@Url.Action("Crear", "Factura", new { id = 0 }, Context.Request.Scheme)' , '')"
+           class="btn btn-sm btn-success text-white">
+            Agregar un Producto  <i class="fa fa-plus-circle"></i>
+        </a>
+    </p>
+</div>
+<div class="col-md-12">
+    <div class="card">
+
+        <div class="card-body">
+            <table id="Factura" class="table table-bordered table-striped">
+                <thead class="table-dark">
+                    <tr>
+                        <th scope="col">Id</th>
+                        <th scope="col">Nombre de la Factura</th>
+                        <th scope="col">Fecha</th>
+                        <th scope="col">Total</th>
+                        <th scope="col">IVA</th>
+                        <th scope="col">Subtotal</th>
+                        <th scope="col">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var factura in Model)
+                    {
+                        <tr>
+                            <th scope="row">@factura.IdFactura</th>
+                            <td>@factura.NombreFactura</td>
+                            <td>@factura.Fecha.ToShortDateString()</td>
+                            <td>@factura.Total</td>
+                            <td>@factura.Iva</td>
+                            <td>@factura.SubTotal</td>
+                            <td>
+                                <a onclick="showInPopup('@Url.Action("Editar", "Factura", new { id = factura.IdFactura }, Context.Request.Scheme)' , 'Actualizar Factura')"
+                                   class="btn btn-outline-warning btn-sm">
+                                    <i class="fa fa-pencil-alt"></i>
+                                </a>
+
+                                <a href="@Url.Action("ImprimirFactura", "Factura", new { clienteId = factura.IdFactura })"
+                                   class="btn btn-info text-white btn-sm imprimir-icon mb-2"
+                                   target="_blank"
+                                   title="Descargar">
+                                    <i class="fa fa-print"> </i>
+                                </a>
+
+
+                                <button data-id="@factura.IdFactura"
+                                        class="btn btn-outline-danger btn-sm deleteItem"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#deleteDialog">
+                                    <i class="fa fa-trash"></i>
+                                </button>
+                            </td>
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<partial name="_MostrarModal" />
+<partial name="_EliminarModal" />
+
+@section Scripts {
+    <script src="~/js/ShowModal.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#Factura').DataTable({
+                "language": {
+                    url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+                }
+            });
+        });
+    </script>
+
+    <script>
+        sc_deleteDialog.openModal('deleteItem', true, 'btnYesDelete', '/Factura/Eliminar/', false);
+    </script>
+}
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>

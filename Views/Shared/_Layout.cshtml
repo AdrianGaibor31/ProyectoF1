@@ -1,0 +1,267 @@
+﻿
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - proyectoFinal</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/proyectoFinal.styles.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/lib/font-awesome/css/all.min.css" />
+    <style>
+
+        body {
+            margin-top: 0; /* Elimina el margen superior */
+            background-color: white;
+        }
+
+        .container-principal {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: rgba(255, 255, 255, 0.8); /* Ajusta la opacidad según tus preferencias */
+            max-width: 600px;
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 10px; /* Ajusta la posición vertical según tus preferencias */
+            left: 10px; /* Ajusta la posición horizontal según tus preferencias */
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .navbar {
+            background-color: white; /* Cambia el color de fondo del navbar a blanco */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra del navbar */
+        }
+
+        .navbar-nav .nav-link {
+            color: black; /* Cambia el color del texto de los enlaces a negro */
+            font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+        }
+
+            .navbar-nav .nav-link:hover {
+                color: #ff0000; /* Cambia el color del texto de los enlaces al pasar el ratón a rojo */
+                font-family: Arial, sans-serif; /* Cambia el tipo de letra */
+            }
+
+            .navbar-nav .nav-link:hover {
+                background-color: white; /* Cambia el color de fondo al pasar el ratón a blanco */
+                border-radius: 10px;
+            }
+
+        .navbar-toggler {
+            border-color: #007bff; /* Color del botón del toggle */
+        }
+
+        .navbar-toggler-icon {
+            background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(0, 123, 255, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+            /* Cambia el icono del botón del toggle */
+        }
+
+        .container-main {
+            padding-top: 50px; /* Ajusta el espacio para el contenido principal */
+        }
+        /* Estilo para el footer */
+
+
+        .footer {
+            background-color: #364f6b; /* Gris azulado */
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .copy-text p {
+            margin: 0; /* Elimina el margen predeterminado del párrafo */
+        }
+
+        .social-icons {
+            display: flex;
+        }
+
+            .social-icons a {
+                margin-left: 10px; /* Espaciado entre íconos de redes sociales */
+                color: #fff; /* Color blanco para los íconos */
+            }
+
+            /* Ajusta el tamaño de los íconos según sea necesario */
+            .social-icons i {
+                font-size: 20px;
+            }
+
+    </style>
+</head>
+<body>
+    <header>
+
+        <nav class="navbar navbar-expand-lg">
+            <!-- Cambia bg-light a bg-primary y agrega text-white -->
+            <!-- Cambia bg-light a bg-primary -->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <img src="~/imagenes/fondo2.png" alt="Logo" style="top: 0px; max-width: 60px; max-height: 40px;" />
+                                <span class="visually-hidden">Desplegar menú</span> <!-- Agrega una descripción visualmente oculta para accesibilidad -->
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <!-- Aquí van los elementos de la lista desplegable -->
+                               
+                                <li>
+
+                                    <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="Perfil">
+                                        <i class="fas fa-user"></i> Perfil
+                                    </a>
+
+                                </li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li>
+                                    <a class="nav-link" asp-area="" asp-controller="Login" asp-action="Salir">
+                                        <i class="fas fa-sign-out-alt"></i> Salir
+                                    </a>
+
+                                </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">
+                                <i class="fas fa-home"></i> Inicio
+                            </a>
+                        </li>
+
+
+                       
+
+                         @if (User.IsInRole("Admin"))
+                        {
+                            <!---Buscar las acciones del personal actual--->
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Producto" asp-action="ListadoProducto">
+                                    <i class="fas fa-box"></i>Productos
+                                </a>
+                            </li>
+                        }
+
+                         @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Categoria" asp-action="ListadoCategoria">
+                                    <i class="fas fa-list-alt"></i>Categorias
+                                </a>
+                            </li>
+                        }
+
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="" asp-controller="Factura" asp-action="ListadoFactura">
+                                <i class="fas fa-file-invoice-dollar"></i>Factura
+                            </a>
+                        </li>
+                         @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Cliente" asp-action="ListadoCliente">
+                                    <i class="fas fa-user"></i>Cliente
+                                </a>
+                            </li>
+
+                        }
+
+                    
+
+                        
+
+
+
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="" asp-controller="Usuarios" asp-action="ListadoUsuario">
+                                    <i class="fas fa-users"></i> Usuarios
+                                </a>
+                            </li>
+                        }
+
+
+
+                    
+
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </header>
+
+
+
+
+
+    <div class="container-main">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="copy-text">
+                    <p>&copy;THE GOATS. Todos los derechos reservados.</p>
+                    <!-- Ronald C. -->
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.youtube.com/watch?v=yYwtnFTpBGQ" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com/watch?v=yYwtnFTpBGQ" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.youtube.com/watch?v=yYwtnFTpBGQ" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.youtube.com/watch?v=yYwtnFTpBGQ" target="_blank"><i class="fab fa-tiktok"></i></a>
+
+                    <!-- Agrega más iconos según sea necesario -->
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

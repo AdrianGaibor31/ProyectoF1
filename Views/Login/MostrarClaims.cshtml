@@ -1,0 +1,19 @@
+﻿@model IEnumerable<string>
+
+<h2>Logs de Roles</h2>
+
+@if (Model.Any())
+{
+    <ul>
+        @foreach (var logEntry in Model)
+        {
+            <li>@logEntry</li>
+        }
+    </ul>
+}
+else
+{
+    <p>No hay registros disponibles.</p>
+}
+
+

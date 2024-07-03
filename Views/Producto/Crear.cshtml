@@ -1,0 +1,98 @@
+﻿@model proyectoFinal.Models.Entidades.Producto
+@{
+    ViewData["Title"] = "CrearProducto";
+    Layout = null;
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header text-center">
+            <h5>Crear Producto</h5>
+        </div>
+        <div class="card-body text-center">
+            <form asp-action="Crear" method="post" enctype="multipart/form-data">
+
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Nombre</label>
+                        <input class="form-control" type="text" asp-for="Nombre" required />
+                        <span asp-validation-for="Nombre" class="field-validation-error"></span>
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Código Producto</label>
+                        <input class="form-control" type="text" asp-for="CodigoProducto" pattern="[0-9]*" required />
+                        <span asp-validation-for="CodigoProducto" class="field-validation-error"></span>
+                    </div>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-control" asp-for="Descripcion"></textarea>
+                    <span asp-validation-for="Descripcion" class="field-validation-error"></span>
+                </div>
+
+
+                <div class="row">
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Precio</label>
+                        <input class="form-control" type="text" asp-for="Precio" required />
+                        <span asp-validation-for="Precio" class="field-validation-error"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Cantidad en Stock</label>
+                        <input class="form-control" type="number" asp-for="CantidadEnStock" required />
+                        <span asp-validation-for="CantidadEnStock" class="field-validation-error"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3">
+                        <label class="form-label">Fecha de Creación</label>
+                        <input class="form-control" type="date" asp-for="FechaCreacion" required />
+                        <span asp-validation-for="FechaCreacion" class="field-validation-error"></span>
+                    </div>
+
+                    <div class="col-md-4 mb-3 d-flex align-items-center justify-content-center">
+                        <label class="form-check-label">Activo</label>
+                        <div class="form-check ms-2">
+                            <input class="form-check-input" type="checkbox" asp-for="Activo" />
+                            <span asp-validation-for="Activo" class="field-validation-error"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+
+
+
+                <div class="mb-3">
+                    <label class="form-label">Categoría</label>
+                    <select asp-for="Categoriaid" asp-items="@(new SelectList(Model.Categoria, "Value", "Text"))" class="form-control" required>
+                        <option value="">Seleccione una Ruta</option>
+                    </select>
+                    <span asp-validation-for="Categoriaid" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Imagen (PNG)</label>
+                    <input type="file" class="form-control" name="Imagen" accept=".png" required />
+                    <span asp-validation-for="URLFoto" class="field-validation-error"></span>
+                </div>
+
+
+                <div class="card-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-save"></i> Guardar</button>
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal"><i class="fa fa-ban"></i> Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

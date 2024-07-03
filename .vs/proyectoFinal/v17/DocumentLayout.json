@@ -1,0 +1,1165 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:controllers\\facturacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\usuarios\\listadousuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\usuarios\\listadousuario.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\factura\\listadofactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\factura\\listadofactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\factura\\imprimirfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\factura\\imprimirfactura.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\entidades\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\producto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\producto\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\producto\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\producto\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\categoria\\listadocategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\categoria\\listadocategoria.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\producto\\listadoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\producto\\listadoproducto.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\cliente\\listadocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\cliente\\listadocliente.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\entidades\\viewmodelaccion\\viewmodelaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\entidades\\viewmodelaccion\\viewmodelaccion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\serviciofactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\serviciofactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\factura\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\factura\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\factura\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\factura\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\entidades\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\entidades\\factura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628063451_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240628063451_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\iserviciofactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\iserviciofactura.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:controllers\\usuarioscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:controllers\\logincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:controllers\\productocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\login\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\login\\registro.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\entidades\\usuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\entidades\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\entidades\\producto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005750_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240628005750_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005557_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240628005557_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005331_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240628005331_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005218_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240628005218_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\smedicocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\smedicocontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\serviciolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\serviciolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\iserviciolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\iserviciolista.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\iservicioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\iservicioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\cliente\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\cliente\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627225415_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240627225415_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\models\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:models\\entidades\\categoria.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:wwwroot\\lib\\font-awesome\\js\\fontawesome.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627184217_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240627184217_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627183442_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240627183442_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627183140_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240627183140_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627182735_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20240627182735_ProAdri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\categoria\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\categoria\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\cliente\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\cliente\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\categoria\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\categoria\\crear.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:controllers\\categoriacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\login\\iniciarsesion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\login\\iniciarsesion.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\serviciousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\serviciousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\iserviciousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\iserviciousuarios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\usuarios\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\usuarios\\editar.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\servicioimagenp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\servicioimagenp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\iservicioimagenp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\iservicioimagenp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\servicioimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\servicioimagen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\services\\servicioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:services\\servicioproducto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\wwwroot\\js\\aes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:wwwroot\\js\\aes.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302184219_ProAm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302180650_ProAm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302173038_ProAm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\usuarios\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\usuarios\\perfil.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143726_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143221_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222140920_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240221190627_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220202649_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220191254_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220185737_BaseIna.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|c:\\users\\ronald\\desktop\\proyectoruta\\migrations\\20240628065151_proadri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{507FFEDA-3041-49E5-B258-F5207E298B88}|proyectoFinal.csproj|solutionrelative:migrations\\20240628065151_proadri.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FacturaController.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\FacturaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FacturaController.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\FacturaController.cs",
+              "RelativeToolTip": "Controllers\\FacturaController.cs",
+              "ViewState": "AQIAAOwAAAAAAAAAAAAuwPwAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T16:02:59.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ListadoFactura.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\ListadoFactura.cshtml",
+              "RelativeDocumentMoniker": "Views\\Factura\\ListadoFactura.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\ListadoFactura.cshtml",
+              "RelativeToolTip": "Views\\Factura\\ListadoFactura.cshtml",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAAACoAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:30:08.921Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AQIAAPUAAAAAAAAAAAAAAMQAAAA5AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:03.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:03.89Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAEsBAAAAAAAAAAAcwFYBAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:02.449Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ListadoUsuario.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Usuarios\\ListadoUsuario.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\ListadoUsuario.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Usuarios\\ListadoUsuario.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\ListadoUsuario.cshtml",
+              "ViewState": "AQIAAIoAAAAAAAAAAAAAAI4AAABQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:03.806Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ImprimirFactura.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\ImprimirFactura.cshtml",
+              "RelativeDocumentMoniker": "Views\\Factura\\ImprimirFactura.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\ImprimirFactura.cshtml",
+              "RelativeToolTip": "Views\\Factura\\ImprimirFactura.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIoAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-28T06:01:29.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Cliente.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades\\Cliente.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Cliente.cs",
+              "RelativeToolTip": "Models\\Entidades\\Cliente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwBwAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T14:55:59.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Producto\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producto\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Producto\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Producto\\Editar.cshtml",
+              "ViewState": "AQIAABkAAAAAAAAAAAAcwDkAAAA2AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T22:03:51.727Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Producto\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producto\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Producto\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Producto\\Crear.cshtml",
+              "ViewState": "AQIAADEAAAAAAAAAAAAAAD8AAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T22:01:29.658Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "ListadoProducto.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Producto\\ListadoProducto.cshtml",
+              "RelativeDocumentMoniker": "Views\\Producto\\ListadoProducto.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Producto\\ListadoProducto.cshtml",
+              "RelativeToolTip": "Views\\Producto\\ListadoProducto.cshtml",
+              "ViewState": "AQIAACcAAAAAAAAAAAAcwCkAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T21:27:53.45Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ListadoCategoria.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Categoria\\ListadoCategoria.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categoria\\ListadoCategoria.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Categoria\\ListadoCategoria.cshtml",
+              "RelativeToolTip": "Views\\Categoria\\ListadoCategoria.cshtml",
+              "ViewState": "AQIAADwAAAAAAAAAAAAAAC8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T22:16:33.746Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ListadoCliente.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Cliente\\ListadoCliente.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\ListadoCliente.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Cliente\\ListadoCliente.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\ListadoCliente.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAAAAACkAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:32:26.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ViewModelAccion.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\ViewModelAccion\\ViewModelAccion.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades\\ViewModelAccion\\ViewModelAccion.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\ViewModelAccion\\ViewModelAccion.cs",
+              "RelativeToolTip": "Models\\Entidades\\ViewModelAccion\\ViewModelAccion.cs",
+              "ViewState": "AQIAABQAAAAAAAAAAAAswCEAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T05:35:31.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAABYAAAA8AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.878Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ServicioFactura.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioFactura.cs",
+              "RelativeDocumentMoniker": "Services\\ServicioFactura.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioFactura.cs",
+              "RelativeToolTip": "Services\\ServicioFactura.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAAYwBkAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T05:47:23.427Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-06-27T19:16:55.01Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Factura\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Factura\\Editar.cshtml",
+              "ViewState": "AQIAABIAAAAAAAAAAAAAAAIAAAAfAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:30:58.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACAAAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:08:27.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Factura\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Factura\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Factura\\Crear.cshtml",
+              "ViewState": "AQIAAGwBAAAAAAAAAAAAAHwBAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:30:35.319Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "20240628065151_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628065151_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240628065151_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628065151_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240628065151_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:51:51.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Factura.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Factura.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades\\Factura.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Factura.cs",
+              "RelativeToolTip": "Models\\Entidades\\Factura.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAgwB8AAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T15:44:02.256Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20240628063451_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628063451_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240628063451_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628063451_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240628063451_ProAdri.cs",
+              "ViewState": "AQIAAB8AAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T06:34:51.813Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IServicioFactura.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioFactura.cs",
+              "RelativeDocumentMoniker": "Services\\IServicioFactura.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioFactura.cs",
+              "RelativeToolTip": "Services\\IServicioFactura.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAABLAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T05:46:26.675Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "UsuariosController.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\UsuariosController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UsuariosController.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\UsuariosController.cs",
+              "RelativeToolTip": "Controllers\\UsuariosController.cs",
+              "ViewState": "AQIAAEYAAAAAAAAAAAAkwF0AAAA9AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.808Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "LoginController.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\LoginController.cs",
+              "RelativeDocumentMoniker": "Controllers\\LoginController.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\LoginController.cs",
+              "RelativeToolTip": "Controllers\\LoginController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.817Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "ProductoController.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\ProductoController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ProductoController.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\ProductoController.cs",
+              "RelativeToolTip": "Controllers\\ProductoController.cs",
+              "ViewState": "AQIAACsAAAAAAAAAAAAgwC8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:18:19.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Registro.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Login\\Registro.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\Registro.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Login\\Registro.cshtml",
+              "RelativeToolTip": "Views\\Login\\Registro.cshtml",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAH0AAAAiAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:02.451Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Usuarios.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Usuarios.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades\\Usuarios.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Usuarios.cs",
+              "RelativeToolTip": "Models\\Entidades\\Usuarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.841Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Producto.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Producto.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades\\Producto.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Producto.cs",
+              "RelativeToolTip": "Models\\Entidades\\Producto.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAIwDcAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T20:34:54.758Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "20240628005557_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005557_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240628005557_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005557_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240628005557_ProAdri.cs",
+              "ViewState": "AQIAAEAAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T00:55:58.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "20240628005750_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005750_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240628005750_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005750_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240628005750_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T00:57:51.188Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "20240628005331_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005331_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240628005331_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005331_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240628005331_ProAdri.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T00:53:31.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "20240628005218_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005218_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240628005218_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240628005218_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240628005218_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-28T00:52:19.273Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ServicioLista.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioLista.cs",
+              "RelativeDocumentMoniker": "Services\\ServicioLista.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioLista.cs",
+              "RelativeToolTip": "Services\\ServicioLista.cs",
+              "ViewState": "AQIAAAEAAAAAAAAAAAAiwFIAAAAIAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.849Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "SMedicoContext.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\SMedicoContext.cs",
+              "RelativeDocumentMoniker": "Models\\SMedicoContext.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\SMedicoContext.cs",
+              "RelativeToolTip": "Models\\SMedicoContext.cs",
+              "ViewState": "AQIAACAAAAAAAAAAAAAiwCQAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.873Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "IServicioLista.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioLista.cs",
+              "RelativeDocumentMoniker": "Services\\IServicioLista.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioLista.cs",
+              "RelativeToolTip": "Services\\IServicioLista.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwBgAAAACAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.852Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "IServicioProducto.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioProducto.cs",
+              "RelativeDocumentMoniker": "Services\\IServicioProducto.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioProducto.cs",
+              "RelativeToolTip": "Services\\IServicioProducto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:53:21.552Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Cliente\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Cliente\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\Crear.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAswCkAAABaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:32:52.674Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "20240627225415_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627225415_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240627225415_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627225415_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240627225415_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T22:54:15.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Categoria.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Categoria.cs",
+              "RelativeDocumentMoniker": "Models\\Entidades\\Categoria.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Models\\Entidades\\Categoria.cs",
+              "RelativeToolTip": "Models\\Entidades\\Categoria.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA8AAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T20:49:12.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "fontawesome.js",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+              "RelativeDocumentMoniker": "wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+              "RelativeToolTip": "wwwroot\\lib\\font-awesome\\js\\fontawesome.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-06-27T19:17:14.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "20240627184217_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627184217_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240627184217_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627184217_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240627184217_ProAdri.cs",
+              "ViewState": "AQIAAIgAAAAAAAAAAAAQwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T18:42:17.398Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "20240627183442_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627183442_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240627183442_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627183442_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240627183442_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T18:34:43.105Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "20240627183140_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627183140_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240627183140_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627183140_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240627183140_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T18:31:40.489Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "20240627182735_ProAdri.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627182735_ProAdri.cs",
+              "RelativeDocumentMoniker": "Migrations\\20240627182735_ProAdri.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Migrations\\20240627182735_ProAdri.cs",
+              "RelativeToolTip": "Migrations\\20240627182735_ProAdri.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-27T18:27:36.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Categoria\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categoria\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Categoria\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Categoria\\Editar.cshtml",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAAwCAAAAAaAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T22:17:46.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Cliente\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cliente\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Cliente\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Cliente\\Editar.cshtml",
+              "ViewState": "AQIAACQAAAAAAAAAAAAAADgAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-27T17:33:26.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Crear.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Categoria\\Crear.cshtml",
+              "RelativeDocumentMoniker": "Views\\Categoria\\Crear.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Categoria\\Crear.cshtml",
+              "RelativeToolTip": "Views\\Categoria\\Crear.cshtml",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-06-25T22:17:10.896Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "CategoriaController.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\CategoriaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoriaController.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Controllers\\CategoriaController.cs",
+              "RelativeToolTip": "Controllers\\CategoriaController.cs",
+              "ViewState": "AQIAAB0AAAAAAAAAAAAgwG8AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T22:09:00.341Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "IniciarSesion.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Login\\IniciarSesion.cshtml",
+              "RelativeDocumentMoniker": "Views\\Login\\IniciarSesion.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Login\\IniciarSesion.cshtml",
+              "RelativeToolTip": "Views\\Login\\IniciarSesion.cshtml",
+              "ViewState": "AQIAAF8AAAAAAAAAAAAAAFQAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:02.446Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 50,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-15T03:14:03.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ServicioUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioUsuarios.cs",
+              "RelativeDocumentMoniker": "Services\\ServicioUsuarios.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioUsuarios.cs",
+              "RelativeToolTip": "Services\\ServicioUsuarios.cs",
+              "ViewState": "AQIAABAAAAAAAAAAAAAQwCIAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.887Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "IServicioUsuarios.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioUsuarios.cs",
+              "RelativeDocumentMoniker": "Services\\IServicioUsuarios.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioUsuarios.cs",
+              "RelativeToolTip": "Services\\IServicioUsuarios.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAyAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-15T03:14:03.892Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 53,
+              "Title": "Editar.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Usuarios\\Editar.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Editar.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Usuarios\\Editar.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Editar.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:03.88Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "ServicioImagenP.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioImagenP.cs",
+              "RelativeDocumentMoniker": "Services\\ServicioImagenP.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioImagenP.cs",
+              "RelativeToolTip": "Services\\ServicioImagenP.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAmwBEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:37:42.345Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "IServicioImagenP.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioImagenP.cs",
+              "RelativeDocumentMoniker": "Services\\IServicioImagenP.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\IServicioImagenP.cs",
+              "RelativeToolTip": "Services\\IServicioImagenP.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:04:25.388Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "ServicioImagen.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioImagen.cs",
+              "RelativeDocumentMoniker": "Services\\ServicioImagen.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioImagen.cs",
+              "RelativeToolTip": "Services\\ServicioImagen.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-25T21:02:28.453Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ServicioProducto.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioProducto.cs",
+              "RelativeDocumentMoniker": "Services\\ServicioProducto.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Services\\ServicioProducto.cs",
+              "RelativeToolTip": "Services\\ServicioProducto.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAAwBgAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-06-26T01:54:40.252Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "aes.js",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\wwwroot\\js\\aes.js",
+              "RelativeDocumentMoniker": "wwwroot\\js\\aes.js",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\wwwroot\\js\\aes.js",
+              "RelativeToolTip": "wwwroot\\js\\aes.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAA6wB0AAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-05-20T13:17:15.106Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "20240302184219_ProAm.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302184219_ProAm.cs",
+              "RelativeDocumentMoniker": "..\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302184219_ProAm.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302184219_ProAm.cs",
+              "RelativeToolTip": "..\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302184219_ProAm.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T18:42:19.311Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "20240302180650_ProAm.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302180650_ProAm.cs",
+              "RelativeDocumentMoniker": "..\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302180650_ProAm.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302180650_ProAm.cs",
+              "RelativeToolTip": "..\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302180650_ProAm.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T18:06:51.174Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "20240302173038_ProAm.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302173038_ProAm.cs",
+              "RelativeDocumentMoniker": "..\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302173038_ProAm.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302173038_ProAm.cs",
+              "RelativeToolTip": "..\\proyectoAmbientes\\proyectoFinal\\proyectoFinal\\proyectoFinal\\Migrations\\20240302173038_ProAm.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-03-02T17:30:39.254Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "Perfil.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Usuarios\\Perfil.cshtml",
+              "RelativeDocumentMoniker": "Views\\Usuarios\\Perfil.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Usuarios\\Perfil.cshtml",
+              "RelativeToolTip": "Views\\Usuarios\\Perfil.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEMAAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:03.885Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoRuta\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAIBJwAsAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-05-15T03:14:03.895Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "20240222143726_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143726_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143726_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143726_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143726_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T14:37:27.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20240222143221_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143221_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143221_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143221_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240222143221_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T14:32:22.047Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "20240221190627_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240221190627_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240221190627_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240221190627_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240221190627_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-21T19:06:28.185Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20240222140920_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222140920_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240222140920_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\proyectoFinal\\Migrations\\20240222140920_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\proyectoFinal\\Migrations\\20240222140920_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-22T14:09:20.816Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "20240220202649_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220202649_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\Migrations\\20240220202649_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220202649_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\Migrations\\20240220202649_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T20:26:49.886Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "20240220191254_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220191254_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\Migrations\\20240220191254_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220191254_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\Migrations\\20240220191254_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T19:12:54.797Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "20240220185737_BaseIna.cs",
+              "DocumentMoniker": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220185737_BaseIna.cs",
+              "RelativeDocumentMoniker": "..\\proyectoFinal\\Migrations\\20240220185737_BaseIna.cs",
+              "ToolTip": "C:\\Users\\ronald\\Desktop\\proyectoFinal\\Migrations\\20240220185737_BaseIna.cs",
+              "RelativeToolTip": "..\\proyectoFinal\\Migrations\\20240220185737_BaseIna.cs",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-02-20T18:57:37.631Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

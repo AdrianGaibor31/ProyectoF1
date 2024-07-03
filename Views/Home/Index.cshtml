@@ -1,0 +1,387 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tu Página</title>
+    <style>
+        /* Estilos existentes */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            overflow: hidden; /* Asegura que no haya scroll inesperado */
+            background-size: cover;
+            opacity: 0.8;
+        }
+
+        .background-video {
+            position: fixed; /* Fija el video para que cubra toda la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Asegura que el video esté detrás de todo el contenido */
+        }
+
+
+        .logo {
+            position: absolute;
+            top: 5px;
+            right: 25px;
+            max-width: 80px;
+            max-height: 55px;
+        }
+
+            .logo a {
+                color: #fff; /* Color blanco */
+                font-size: 24px; /* Tamaño del icono */
+            }
+
+                .logo a:hover {
+                    color: #ccc; /* Cambiar color al pasar el ratón */
+                }
+
+        .jumbotron {
+            background-color: #D5D8DC;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-top: 20px;
+            text-align: center;
+            /* Ajusta el ancho según tus necesidades */
+            width: 92%; /* Porcentaje del ancho de la página */
+            /* Centrar la caja en la página */
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.9;
+        }
+
+            .jumbotron h1 {
+                color: #212F3D;
+                font-size: 3rem;
+                margin-bottom: 20px;
+            }
+
+            .jumbotron p {
+                color: #555;
+                font-size: 1.25rem;
+                margin-bottom: 20px;
+            }
+
+        .feature-box {
+            background-color: #fff; /* Color de fondo de las cajas de características */
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+            .feature-box h3 {
+                color: #1b6ec2;
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+            }
+
+            .feature-box p {
+                font-size: 1.25rem;
+                color: #555;
+            }
+
+        .imagen {
+            width: 20px;
+            height: 20px;
+            opacity: 0.2;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .body1 {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Nuevos estilos para la sección de características con imagen de fondo */
+        .feature-box-con-fondo {
+            background-color: #A6ACAF;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: #ffffff;
+            text-align: center; /* Alinea el texto al centro */
+            height: 60vh; /* Reducido la altura del recuadro */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center; /* Alinea el contenido al centro horizontalmente */
+            opacity: 0.9; /* Hace las imágenes un poco más transparentes */
+            background: linear-gradient(to bottom, #ffffff, #f8f9fa); /* Agrega un degradado desde blanco hasta gris claro */
+        }
+
+            .feature-box-con-fondo h3 {
+                color: #ffffff;
+                font-size: 2rem;
+                margin-bottom: 10px;
+            }
+
+            .feature-box-con-fondo p {
+                font-size: 1.25rem;
+                color: #ffffff;
+                margin-bottom: 20px;
+            }
+
+            .feature-box-con-fondo.agenda {
+                background-image: url('/imagenes/fondo1Inamhi.jpg'); /* Reemplaza con la ruta de tu imagen 1 */
+            }
+
+            .feature-box-con-fondo.doctores {
+                background-image: url('/imagenes/fondo2Inamhi.jpg'); /* Reemplaza con la ruta de tu imagen 2 */
+            }
+
+            .feature-box-con-fondo.historiales {
+                background-image: url('/imagenes/fondo1Inamhi.jpg'); /* Reemplaza con la ruta de tu imagen 3 */
+
+                
+            }
+
+        /* Estilos para la sección "Mi Sección" */
+        .seccion-con-fondo {
+            background-image: url('/imagenes/fondoPro.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Cambia el color del texto a negro */
+            padding: 100px;
+            text-align: center; /* Alinea el texto al centro */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start; /* Alinea el contenido en la parte superior */
+            opacity: 0.7;
+        }
+
+            .seccion-con-fondo h1 {
+                font-size: 1.9rem; /* Tamaño del texto */
+                font-weight: bold; /* Texto en negrilla */
+                margin-bottom: 20px; /* Espacio inferior al texto */
+            }
+
+            .seccion-con-fondo p {
+                font-size: 1.1rem; /* Tamaño del texto */
+                font-weight: bold; /* Texto en negrilla */
+                margin-bottom: 20px; /* Espacio inferior al texto */
+            }
+
+        /* Estilos para la sección "Mi Sección" */
+        .seccion-con-fondo1 {
+            background-image: url('../../wwwroot/imagenes/fondoinami.jpg'); /* Reemplaza con la ruta de tu imagen de fondo */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: white; /* Cambia el color del texto a negro */
+            padding: 100px;
+            text-align: justify;
+            text-align: left; /* Alinea el texto a la izquierda */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            opacity: 0.9;
+        }
+
+            .seccion-con-fondo1 h1 {
+                font-size: 2.3rem; /* Tamaño del texto */
+                margin-bottom: 20px; /* Espacio inferior al texto */
+            }
+
+            .seccion-con-fondo1 p {
+                font-size: 1.2rem; /* Tamaño del texto */
+                margin-bottom: 20px; /* Espacio inferior al texto */
+            }
+
+        /* Agrega estos estilos al final de tu archivo CSS */
+
+        .departamentos {
+            background-color: rgba(229, 231, 233, 0.9); /* Fondo con opacidad */
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+        }
+
+        .departamento {
+            text-align: center;
+            padding: 20px;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: #ffffff; /* Color de fondo blanco */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+        }
+
+            .departamento i {
+                font-size: 36px;
+                margin-bottom: 10px;
+            }
+
+            .departamento h2 {
+                font-size: 1.5rem;
+                color: #333; /* Color de texto negro */
+            }
+
+            .departamento p {
+                font-size: 1rem;
+                color: #555; /* Color de texto gris oscuro */
+            }
+
+            /* Estilo adicional para el primer departamento */
+            .departamento:first-child {
+                flex-basis: 100%; /* Hacer que ocupe todo el ancho */
+            }
+
+        .perfil-container {
+            text-align: left; /* Alinea la imagen y el nombre a la izquierda */
+            margin-bottom: 20px; /* Ajusta el espacio entre la imagen y el texto */
+        }
+
+        .perfil-img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Hace que la imagen sea redonda */
+            margin-right: 10px; /* Ajusta el espacio entre la imagen y el texto */
+        }
+
+        .perfil-nombre {
+            font-weight: bold;
+            display: inline-block; /* Permite que el nombre esté en la misma línea que la imagen */
+        }
+
+
+        /* Estilos para la sección "Mi Sección" */
+        .seccion-con-fondo2 {
+            position: relative; /* Asegura que los elementos superpuestos sean posicionados correctamente */
+            background-image: url('/imagenes/fondo4.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            color: black;
+            padding: 200px;
+            text-align: justify;
+            text-align: left;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            margin-top: -50px;
+            background-color: rgba(255, 255, 255, 0.8);
+            overflow: hidden;
+        }
+
+            .seccion-con-fondo2::before {
+                content: "";
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+                background-color: rgba(255, 255, 255, 0.2); /* Cambia el nivel de transparencia aquí */
+                z-index: 0; /* Asegura que este pseudo-elemento esté detrás del contenido */
+            }
+
+            .seccion-con-fondo2 h1,
+            .seccion-con-fondo2 p {
+                position: relative; /* Asegura que el texto esté delante del fondo */
+                z-index: 1; /* Coloca el texto encima del pseudo-elemento */
+            }
+
+            .seccion-con-fondo2 h1 {
+                font-size: 2.3rem;
+                margin-bottom: 20px;
+            }
+
+            .seccion-con-fondo2 p {
+                font-size: 1.2rem;
+                margin-bottom: 20px;
+            }
+
+        .containerAcci {
+            max-width: 1150px; /* Ajusta el ancho máximo según tus necesidades */
+            margin: auto;/* Centra el contenedor en la página */
+       
+            background-color: gray; /* Color de fondo del contenedor */
+            border-radius: 20px; /* Bordes redondeados */
+        }
+
+
+
+    </style>
+</head>
+<body>
+    @if (User.IsInRole("Cajero"))
+    {
+
+        <video autoplay muted loop class="background-video">
+            <source src="/imagenes/fondomov.mp4" type="video/mp4">
+            Tu navegador no soporta el elemento de video.
+        </video>
+
+        @if (User.IsInRole("Cajero"))
+        {
+
+        <section>
+            <section>
+                <div class="body1">
+                    <div class="seccion-con-fondo2">
+                        @if (!string.IsNullOrEmpty(ViewData["fotoPerfil"] as string))
+                        {
+                            <div class="perfil-container">
+                                <img src="@ViewData["fotoPerfil"]" alt="Foto de perfil" class="perfil-img" />
+                                <p class="perfil-nombre">Cajero/a @ViewData["nomUsuario"]</p>
+                            </div>
+                        }
+                        <h1>Bienvenido, Cajero/a</h1>
+                        <p>
+                            At TechSolutions, we're dedicated to providing innovative solutions to meet your technological needs.
+                            With over a decade of experience in the industry, we pride ourselves on delivering high-quality products
+                            and services that exceed our clients' expectations.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            
+          
+
+        </section>
+        }
+
+
+    }
+
+    @if (User.IsInRole("Admin"))
+    {
+        <section>
+            <div class="body1">
+                <div class="seccion-con-fondo2">
+                    @if (!string.IsNullOrEmpty(ViewData["fotoPerfil"] as string))
+                    {
+                        <div class="perfil-container">
+                            <img src="@ViewData["fotoPerfil"]" alt="Foto de perfil" class="perfil-img" />
+                            <p class="perfil-nombre">Administrador/a @ViewData["nomUsuario"]</p>
+                        </div>
+                    }
+                    <h1>Bienvenido, administrador/a</h1>
+                    <p>
+                        At TechSolutions, we're dedicated to providing innovative solutions to meet your technological needs. 
+                        With over a decade of experience in the industry, we pride ourselves on delivering high-quality products 
+                        and services that exceed our clients' expectations.
+                    </p>
+                </div>
+            </div>
+        </section>
+    }
+
+
+</body>
+</html>

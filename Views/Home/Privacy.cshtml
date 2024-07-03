@@ -1,0 +1,87 @@
+﻿@{
+    ViewData["Title"] = "Acceso Denegado";
+}
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+
+        margin: 20;
+        padding: 0;
+        margin-top: -20;
+        background-image: url('/imagenes/fondoprincipal.png');
+        background-size: cover;
+        opacity: 0.8;
+
+    }
+
+    .container-main {
+        margin-top: 0;
+        min-height: 100vh;
+    }
+
+    .acceso-denegado-container {
+        margin: 0;
+        padding: 0;
+        background: url('/imagenes/FondoPrivacy.jpg') no-repeat center center fixed;
+        background-size: 100% 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: calc(100vh - 60px); /* Ajusta la altura del footer */
+        font-family: Arial, sans-serif;
+        color: white;
+        text-align: center;
+        flex-direction: column; /* Para que los elementos internos estén en columna */
+    }
+
+        .acceso-denegado-container h1 {
+            font-size: 3rem;
+            margin-bottom: 10px; /* Espaciado inferior al título */
+        }
+
+        .acceso-denegado-container p {
+            font-size: 1.5rem;
+            margin-bottom: 20px; /* Espaciado inferior al párrafo */
+        }
+
+    .botones-container {
+        display: flex;
+        gap: 20px; /* Ajusta el espacio entre los botones */
+        margin-top: 20px; /* Espaciado superior a los botones */
+        justify-content: center; /* Centra los elementos horizontalmente */
+    }
+
+        .botones-container a {
+            text-decoration: none; /* Elimina el subrayado */
+            padding: 10px 15px;
+            background-color: #333;
+            color: white;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+            .botones-container a i {
+                margin-right: 8px; /* Espaciado entre el icono y el texto */
+            }
+</style>
+
+
+<body>
+    <section class="acceso-denegado-container">
+        <div>
+            <h1>No tienes acceso a esta área.</h1>
+            <p>Comunicate con el encargado o  con el Administrador del sitio.</p>
+            <div class="botones-container">
+                <a asp-controller="Home" asp-action="Index" class="boton-icono"><i class="fas fa-home"></i> Página de Inicio</a>
+                <a href="" class="boton-icono"><i class="fas fa-envelope"></i> Contactar Administrador</a>
+            </div>
+        </div>
+    </section>
+</body>

@@ -1,0 +1,70 @@
+﻿@model proyectoFinal.Models.Entidades.Usuarios
+@{
+    ViewData["Title"] = "EditarUsuarios";
+    Layout = null;
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header text-center">
+            <h5>Editar Usuario</h5>
+        </div>
+        <div class="card-body text-center">
+            <form asp-action="Editar" method="post" enctype="multipart/form-data">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="UsuarioID" />
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input class="form-control" type="text" asp-for="Nombre" required />
+                    <span asp-validation-for="Nombre" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Apellido</label>
+                    <input class="form-control" type="text" asp-for="Apellido" required />
+                    <span asp-validation-for="Apellido" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Cédula</label>
+                    <input class="form-control" type="text" asp-for="Cedula" required />
+                    <span asp-validation-for="Cedula" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Correo</label>
+                    <input class="form-control" type="text" asp-for="correo" required />
+                    <span asp-validation-for="correo" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Contraseña</label>
+                    <input class="form-control" type="password" asp-for="Clave" required />
+                    <span asp-validation-for="Clave" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Foto de Perfil</label>
+                    <input class="form-control" type="file" name="Imagen" />
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Rol</label>
+                    <select class="form-select" id="selectRoles" name="Roles">
+                        <option value="Usuario" selected>Usuario</option>
+                        <option value="Doctor">Doctor</option>
+                        <option value="Admin">Admin</option>
+                    </select>
+                </div>
+
+                <div class="card-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-save"></i> Guardar</button>
+                        <button type="button" class="btn btn-sm btn-primary" data-bs-dismiss="modal"><i class="fa fa-ban"></i> Cancelar</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

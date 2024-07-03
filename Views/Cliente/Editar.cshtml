@@ -1,0 +1,56 @@
+﻿@model proyectoFinal.Models.Entidades.Cliente
+@{
+    ViewData["Title"] = "EditarCliente";
+    Layout = null;
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header text-center">
+            <h5>Editar Cliente</h5>
+        </div>
+        <div class="card-body">
+            <form asp-action="Editar">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="hidden" asp-for="IdCliente" />
+
+                <div class="mb-3">
+                    <label class="form-label">Cédula</label>
+                    <input class="form-control" type="text" asp-for="Cedula" required />
+                    <span asp-validation-for="Cedula" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombres</label>
+                    <input class="form-control" type="text" asp-for="Nombres" required />
+                    <span asp-validation-for="Nombres" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Apellidos</label>
+                    <input class="form-control" type="text" asp-for="Apellidos" required />
+                    <span asp-validation-for="Apellidos" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Dirección</label>
+                    <input class="form-control" type="text" asp-for="Direccion" required />
+                    <span asp-validation-for="Direccion" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Teléfono</label>
+                    <input class="form-control" type="text" asp-for="Telefono" required />
+                    <span asp-validation-for="Telefono" class="field-validation-error"></span>
+                </div>
+
+                <div class="card-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-save"></i> Guardar</button>
+                        <a asp-action="ListadoCliente" class="btn btn-sm btn-primary"><i class="fa fa-ban"></i> Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

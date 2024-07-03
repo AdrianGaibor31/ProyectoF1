@@ -1,0 +1,163 @@
+﻿@model proyectoFinal.Models.Entidades.Usuarios
+@{
+    ViewData["Title"] = "Registro";
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <style>
+        /* Estilo adicional para resaltar campos con errores de validación */
+        .field-validation-error {
+            color: red;
+        }
+
+        .background-video {
+            position: fixed; /* Fija el video para que cubra toda la pantalla */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1; /* Asegura que el video esté detrás de todo el contenido */
+        }
+
+        /* Estilo para el fondo con colores pasteles y degradado */
+        body {
+            
+            background-image: url('/imagenes/fondoProA.jpg'); /* Ruta de la imagen de fondo */
+            background-size: cover;
+            height: 120vh; /* Se ha reducido la altura */
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: rgba(234, 236, 238, 0.5); /* Color celeste semi-transparente */
+            padding: 20px; /* Se ha reducido el padding */
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Sombra ligera */
+            width: 100%;
+            max-width: 500px; /* Se ha reducido el ancho máximo */
+            margin-top: -50px;
+        }
+
+        .mb-3.alert-danger {
+            display: none; /* Oculta las alertas por defecto */
+        }
+    </style>
+</head>
+<body>
+    <video autoplay muted loop class="background-video">
+        <source src="/imagenes/fondomov2.mp4" type="video/mp4">
+        Tu navegador no soporta el elemento de video.
+    </video>
+
+
+    <div class="container mt-5 pt-5 text-left">
+        <!-- Añadida la clase 'text-left' al contenedor -->
+        <div class="row">
+            <div class="col-12 col-xl-8 col-md-10">
+                <div class="card">
+                    <div class="card-header">
+                        Regístrate
+                    </div>
+                    <div class="card-body">
+                        <form asp-controller="Login" asp-action="Registro" method="post" enctype="multipart/form-data">
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Nombre</label>
+                                    <input class="form-control" type="text" asp-for="Nombre" required />
+                                    <span asp-validation-for="Nombre" class="field-validation-error"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Apellido</label>
+                                    <input class="form-control" type="text" asp-for="Apellido" required />
+                                    <span asp-validation-for="Apellido" class="field-validation-error"></span>
+                                </div>
+                            </div>
+                            <!-- ... (resto del formulario) ... -->
+                           
+                            <div class="mb-3">
+                                <label class="form-label">Contraseña</label>
+                                <input class="form-control" type="password" asp-for="Clave" required />
+                                <span asp-validation-for="Clave" class="field-validation-error"></span>
+                            </div>
+                            <div class="mb-3 row">
+                                <div class="col-md-6">
+                                    <label class="form-label">Cédula</label>
+                                    <input class="form-control" type="text" asp-for="Cedula" required />
+                                    <span asp-validation-for="Cedula" class="field-validation-error"></span>
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="form-label">Correo</label>
+                                    <input class="form-control" type="email" asp-for="correo" required />
+                                    <span asp-validation-for="correo" class="field-validation-error"></span>
+                                </div>
+                            </div>
+
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Imagen (PNG)</label>
+                                <input type="file" class="form-control" name="Imagen" accept=".png" required />
+                                <span asp-validation-for="URLFotoPerfil" class="field-validation-error"></span>
+                            </div>
+
+
+
+                            <div class="mb-3">
+                                <label class="form-label">Rol</label>
+                                <select class="form-select" id="selectRoles" name="Roles">
+                                    <option value="Cajero" selected>Cajero</option>
+                                    <option value="Admin">Admin</option>
+                                </select>
+                            </div>
+
+
+                            <div class="d-grid gap-2 mb-3">
+                                <button class="btn btn-primary" type="submit">Regístrate</button>
+                            </div>
+
+                            @if (ViewData["Mensaje"] != null)
+                            {
+                                <div class="form-group">
+                                    <div class="alert alert-danger" role="alert">
+                                        @ViewData["Mensaje"]
+                                    </div>
+                                </div>
+                            }
+                            ¿Ya tienes una cuenta? <a href="@Url.Action("IniciarSesion", "Login")"> Iniciar Sesión</a>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                
+                                    <a href="@Url.Action("ListadoUsuario", "Usuarios")"> Volver</a>
+                                
+                            }
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script>
+        function showAlert(input, alertId) {
+            var alertElement = document.getElementById(alertId);
+            var containsNumbersOrSpecialChars = /[^A-Za-zÁÉÍÓÚáéíóú]/.test(input.value);
+            alertElement.style.display = containsNumbersOrSpecialChars ? "block" : "none";
+        }
+    </script>
+</body>
+</html>

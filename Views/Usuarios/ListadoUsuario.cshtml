@@ -1,0 +1,157 @@
+﻿@model IEnumerable<proyectoFinal.Models.Entidades.Usuarios>
+
+@{
+    ViewData["Title"] = "ListadoUsuario";
+    // Ordenar la lista de usuarios colocando primero a los Admin, luego Doctores y finalmente Usuarios
+    var usuariosOrdenados = Model.OrderBy(u =>
+               u.Roles.Contains("Admin") ? 0 :
+               u.Roles.Contains("Doctor") ? 1 : 2);
+}
+
+<style>
+    .titulo {
+        margin-left: 10px;
+    }
+
+    .mensaje {
+        margin-left: 10px;
+    }
+</style>
+
+<div class="titulo">
+    <div class="col-md-12">
+        <h4>Listado de Usuarios</h4>
+    </div>
+</div>
+
+@if (TempData["AlertMessage"] != null)
+{
+    <div class="alert alert-success">
+        <strong>Ok!!---</strong>@TempData["AlertMessage"]
+    </div>
+}
+<div class="mensaje">
+    <p>
+        <button id="toggleElements" class="btn btn-sm btn-success text-white">
+            <i class="fa fa-eye"></i> Mostrar/ocultar elementos
+        </button>
+    </p>
+
+    <div class="mensaje" id="usuariosSection" style="display: none;">
+        <p>
+            <a asp-action="Registro" asp-controller="Login" class="btn btn-sm btn-success text-white">
+                Agregar un usuario <i class="fa fa-user-plus"></i>
+            </a>
+        </p>
+
+        <div class="col-md-12">
+            <div class="card">
+                <div class="card-body table-responsive">
+                    <table id="usuarios" class="table table-bordered table-striped">
+                        <thead class="table-dark">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">Nombre</th>
+                                <th scope="col">Apellido</th>
+                                <th scope="col">Correo</th>
+                                <th scope="col">Cedula</th>
+                                <th scope="col">URL Foto Perfil</th>
+                                <th scope="col">Roles</th>
+                                <th scope="col">Acciones</th>
+                               
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model)
+                            {
+                                <tr>
+                                    <th scope="row">@item.UsuarioID</th>
+                                    <td>@Html.DisplayFor(modelItem => item.Nombre)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Apellido)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.correo)</td>
+                                    <td>@Html.DisplayFor(modelItem => item.Cedula)</td>
+                                    <td>
+                                        <img src="@item.URLFotoPerfil" class="card-img-top rounded-circle" alt="Foto de perfil" style="max-width: 60px; height: auto;">
+                                    </td>
+                                    <td>@Html.DisplayFor(modelItem => item.Roles)</td>
+                                    <td>
+                                        <a onclick="showInPopup('@Url.Action("Editar", "Usuarios", new { id = item.UsuarioID }, Context.Request.Scheme)' , 'Actualizar Paciente')" class="btn btn-outline-warning btn-sm">
+                                            <i class="fa fa-pencil-alt"></i> Editar
+                                        </a>
+                                        <button data-id="@item.UsuarioID" class="btn btn-outline-danger btn-sm deleteItem" data-bs-toggle="modal" data-bs-target="#deleteDialog">
+                                            <i class="fa fa-trash"></i> Eliminar
+                                        </button>
+                                    </td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        @foreach (var role in usuariosOrdenados.SelectMany(item => item.Roles).Distinct())
+        {
+            <div class="col-md-12">
+                <h4>@role</h4>
+            </div>
+
+            @foreach (var item in usuariosOrdenados.Where(u => u.Roles.Contains(role)))
+            {
+                <div class="col-md-4 mb-3">
+                    <div class="card">
+                        <img src="@item.URLFotoPerfil" class="card-img-top" alt="Foto de perfil">
+                        <div class="card-body">
+                            <h5 class="card-title">@item.Nombre @item.Apellido</h5>
+                            <p class="card-text">
+                                <i class="fa fa-id-badge"></i> <strong>ID:</strong> @item.UsuarioID <br />
+                                <i class="fa fa-envelope"></i> <strong>Correo:</strong> @item.correo <br />
+                                <i class="fa fa-users"></i> <strong>Roles:</strong> @string.Join(", ", item.Roles) <br />
+                            </p>
+                            <a onclick="showInPopup('@Url.Action("Editar", "Usuarios", new { id = item.UsuarioID }, Context.Request.Scheme)' , 'Actualizar Usuario')" class="btn btn-outline-warning btn-sm">
+                                <i class="fa fa-pencil-alt"></i> Editar
+                            </a>
+                            <button data-id="@item.UsuarioID" class="btn btn-outline-danger btn-sm deleteItem" data-bs-toggle="modal" data-bs-target="#deleteDialog">
+                                <i class="fa fa-trash"></i> Eliminar
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+    </div>
+</div>
+
+<partial name="_MostrarModal" />
+<partial name="_EliminarModal" />
+
+@section Scripts {
+    <script src="~/js/ShowModal.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('#usuarios').DataTable({
+                "language": {
+                    url: "https://cdn.datatables.net/plug-ins/1.11.5/i18n/es-ES.json"
+                },
+            });
+        });
+    </script>
+    <script>
+        sc_deleteDialog.openModal('deleteItem', true, 'btnYesDelete', '/Usuarios/Eliminar/', false);
+    </script>
+    <script>
+        $(document).ready(function () {
+            // Manejo del botón de alternancia
+            $("#toggleElements").click(function () {
+                $("#usuariosSection").toggle();
+            });
+        });
+    </script>
+}
+
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+<script src="~/js/site.js" asp-append-version="true"></script>

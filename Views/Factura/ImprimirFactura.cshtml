@@ -1,0 +1,148 @@
+﻿@model proyectoFinal.Models.Entidades.ViewModelAccion.ViewModelAccion
+
+
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factura</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+
+        .invoice-container {
+            max-width: 800px;
+            margin: auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        .invoice-header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+        }
+
+            .invoice-header h2 {
+                margin-top: 0;
+                font-size: 24px;
+                color: #333;
+            }
+
+            .invoice-header p {
+                margin: 5px 0;
+                font-size: 14px;
+                color: #666;
+            }
+
+        .invoice-details {
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #eee;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+
+            .invoice-details h4 {
+                margin-top: 0;
+                font-size: 18px;
+                color: #333;
+            }
+
+            .invoice-details p {
+                margin: 5px 0;
+                font-size: 14px;
+                color: #666;
+            }
+
+        .invoice-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+            .invoice-table th,
+            .invoice-table td {
+                border: 1px solid #ccc;
+                padding: 10px;
+                text-align: left;
+                font-size: 14px;
+            }
+
+            .invoice-table th {
+                background-color: #f2f2f2;
+                font-weight: bold;
+            }
+
+        .invoice-total {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .invoice-logo {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            max-width: 150px;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0,0,0,0.1);
+        }
+    </style>
+</head>
+<body>
+    <div class="invoice-container mt-5">
+        <img src="~/imagenes/fondo2.png" alt="Logo" class="invoice-logo">
+
+        <div class="invoice-header">
+            <h2>Factura</h2>
+            <p><strong>Número de Factura:</strong> @Model.NombreFactura</p>
+            <p><strong>Fecha:</strong> @Model.Fecha</p>
+        </div>
+
+        <div class="invoice-details">
+            <h4>Cliente</h4>
+            <p><strong>Cedula:</strong> @Model.CedulaCliente</p>
+            <p><strong>Nombre:</strong> @Model.NombreCliente</p>
+            <p><strong>Apellido:</strong> @Model.ApellidoCliente</p>
+            <p><strong>Dirección:</strong> @Model.DireccionCliente</p>
+           
+        </div>
+
+        <div class="invoice-table">
+            <table>
+                <tbody>
+                    <tr>
+                        <th scope="row">Subtotal</th>
+                        <td>$@Model.SubTotal</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Descuento Total</th>
+                        <td>$@Model.DescuentoTotal</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">IVA (12%)</th>
+                        <td>$@Model.Iva</td>
+                    </tr>
+                    <tr class="invoice-total">
+                        <th scope="row">Total</th>
+                        <td>$@Model.Total</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
+

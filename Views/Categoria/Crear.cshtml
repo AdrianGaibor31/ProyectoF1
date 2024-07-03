@@ -1,0 +1,37 @@
+﻿@model proyectoFinal.Models.Entidades.Categoria
+@{
+    ViewData["Title"] = "CrearCategoria";
+    Layout = null;
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header text-center">
+            <h5>Crear Categoría</h5>
+        </div>
+        <div class="card-body text-center">
+            <form asp-action="Crear">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <div class="mb-3">
+                    <label class="form-label">Nombre</label>
+                    <input class="form-control" type="text" asp-for="Nombre" required />
+                    <span asp-validation-for="Nombre" class="field-validation-error"></span>
+                </div>
+
+                <div class="mb-3">
+                    <label class="form-label">Descripción</label>
+                    <textarea class="form-control" asp-for="Descripcion"></textarea>
+                    <span asp-validation-for="Descripcion" class="field-validation-error"></span>
+                </div>
+
+                <div class="card-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-save"></i> Guardar</button>
+                        <a asp-action="ListadoCategoria" class="btn btn-sm btn-primary"><i class="fa fa-ban"></i> Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

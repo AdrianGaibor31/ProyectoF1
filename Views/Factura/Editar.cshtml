@@ -1,0 +1,395 @@
+﻿@model proyectoFinal.Models.Entidades.Factura
+@{
+    ViewData["Title"] = "EditarFactura";
+    Layout = null; // No utiliza layout
+}
+
+<div class="col-md-12">
+    <div class="card">
+        <div class="card-header text-center">
+            <h5>Crear Factura</h5>
+        </div>
+        <div class="card-body">
+            <form asp-action="Crear" method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+                <!-- Campos de la factura -->
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Número Factura</label>
+                        <input class="form-control" type="text" asp-for="NombreFactura" required />
+                        <span asp-validation-for="NombreFactura" class="field-validation-error"></span>
+                    </div>
+
+                    <div class="col-md-6 mb-3">
+                        <label class="form-label">Fecha</label>
+                        <input class="form-control" type="date" asp-for="Fecha" required />
+                        <span asp-validation-for="Fecha" class="field-validation-error"></span>
+                    </div>
+                </div>
+
+                <!-- Información del cliente (ejemplo simplificado) -->
+                <div id="infoCliente" style="display: block;">
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Id cliente</label>
+                                <input class="form-control" asp-for="IdCliente" type="text" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Cédula</label>
+                                <div class="input-group">
+                                    <input class="form-control" asp-for="CedulaCliente" type="text" placeholder="Ingrese la cédula" required oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+                                    <button class="btn btn-primary" type="button" onclick="buscarCliente()">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Nombres</label>
+                                <input class="form-control" asp-for="NombreCliente" type="text" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Apellidos</label>
+                                <input class="form-control" asp-for="ApellidoCliente" type="text" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Teléfono</label>
+                                <input class="form-control" id="TelefonoCliente" type="text" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="mb-3">
+                                <label class="form-label">Dirección</label>
+                                <input class="form-control" asp-for="DireccionCliente" type="text" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+
+                <!-- Información del producto -->
+                <div id="infoProducto">
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Código Producto</label>
+                                <div class="input-group">
+                                    <input class="form-control" id="CodigoProducto" type="text" placeholder="Ingrese el código" />
+                                    <button class="btn btn-primary" type="button" onclick="buscarProducto()">Buscar</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Nombre</label>
+                                <input class="form-control" id="NombreProducto" type="text" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="mb-3">
+                                <label class="form-label">Cantidad en Stock</label>
+                                <input class="form-control" id="CantidadStockProducto" type="text" readonly />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Id producto</label>
+                                <input class="form-control" id="IdProducto" type="text" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Precio</label>
+                                <input class="form-control" id="PrecioProducto" type="text" readonly />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Cantidad</label>
+                                <input class="form-control" id="CantidadProducto" type="number" value="1" min="1" />
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="mb-3">
+                                <label class="form-label">Descuento</label>
+                                <input class="form-control" id="DescuentoProducto" type="number" value="0" min="0" />
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                        <div class="col-md-8 offset-md-2">
+                            <div class="mb-3 text-center">
+                                <button class="btn btn-success" type="button" onclick="agregarProducto()">Agregar Producto</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                </div>
+
+                <!-- Lista de productos seleccionados -->
+                <div id="listaProductos">
+                    <h5>Lista de Productos</h5>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Nombre</th>
+                                <th>Precio</th>
+                                <th>Cantidad</th>
+                                <th>Subtotal</th>
+                                <th>Descuento</th>
+                                <th>Iva</th>
+                                <th>Total</th>
+                                <th>Acciones</th>
+                            </tr>
+                        </thead>
+
+
+                        <tbody id="productosSeleccionados">
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Campos adicionales de la factura (subtotal, iva, total) -->
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">Subtotal</label>
+                            <input class="form-control" type="number" asp-for="SubTotal" step="0.01" required />
+                            <span asp-validation-for="SubTotal" class="field-validation-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">Descuento</label>
+                            <input class="form-control" type="number" asp-for="DescuentoTotal" step="0.01" required />
+                            <span asp-validation-for="DescuentoTotal" class="field-validation-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">IVA</label>
+                            <input class="form-control" type="number" asp-for="Iva" step="0.01" required />
+                            <span asp-validation-for="Iva" class="field-validation-error"></span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="mb-3">
+                            <label class="form-label">Total</label>
+                            <input class="form-control" type="number" asp-for="Total" step="0.01" required />
+                            <span asp-validation-for="Total" class="field-validation-error"></span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Botones de acción -->
+                <div class="card-footer">
+                    <div class="form-group">
+                        <button type="submit" class="btn btn-sm btn-success"><i class="fa fa-save"></i> Guardar</button>
+                        <a asp-action="ListadoFactura" class="btn btn-sm btn-primary"><i class="fa fa-ban"></i> Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<script>
+    function buscarCliente() {
+        var cedula = document.getElementById('CedulaCliente').value;
+
+        // Realiza una llamada AJAX para buscar la información del cliente por cédula
+        $.get('@Url.Action("BuscarCliente", "Factura")?cedula=' + cedula, function (data) {
+            if (data) {
+                // Rellena los campos en el contenedor "infoCliente" con la información obtenida
+                $("#NombreCliente").val(data.nombre);
+                $("#ApellidoCliente").val(data.apellido);
+                $("#TelefonoCliente").val(data.telefono);
+                $("#DireccionCliente").val(data.direccion);
+                $("#IdCliente").val(data.idcliente);
+
+                // Muestra el contenedor "infoCliente"
+                $("#infoCliente").show();
+            } else {
+                alert('Cliente no encontrado');
+                // Oculta el contenedor "infoCliente" si el cliente no se encuentra
+                $("#infoCliente").hide();
+            }
+        });
+    }
+
+    function buscarProducto() {
+        var codigopro = document.getElementById('CodigoProducto').value;
+
+        // Realiza una llamada AJAX para buscar la información del producto por código
+        $.get('@Url.Action("BuscarProducto", "Factura")?codigopro=' + codigopro, function (data) {
+            if (data) {
+                // Rellena los campos en el contenedor "infoProducto" con la información obtenida
+                $("#NombreProducto").val(data.nombre);
+                $("#CantidadStockProducto").val(data.cantidadStock);
+                $("#CategoriaProducto").val(data.categoria);
+                $("#PrecioProducto").val(data.precio);
+                $("#IdProducto").val(data.idproducto);
+
+
+                // Muestra el contenedor "infoProducto"
+                $("#infoProducto").show();
+            } else {
+                alert('Producto no encontrado');
+                // Oculta el contenedor "infoProducto" si el producto no se encuentra
+                $("#infoProducto").hide();
+            }
+        });
+    }
+    // ronald actua
+    function agregarProducto() {
+        var idProducto = $("#IdProducto").val(); // Obtener el Id del producto seleccionado
+        var nombre = $("#NombreProducto").val();
+        var precio = parseFloat($("#PrecioProducto").val());
+        var cantidad = parseInt($("#CantidadProducto").val());
+        var descuento = parseFloat($("#DescuentoProducto").val());
+        var subtotal = precio * cantidad;
+        var iva = subtotal * 0.12; // Calcula el IVA (12% del subtotal)
+        var total = subtotal + iva - descuento; // Calcula el total con IVA y descuento
+
+        // Verificar que se tenga al menos el nombre y el precio
+        if (!nombre || isNaN(precio) || isNaN(cantidad) || isNaN(descuento)) {
+            alert('Por favor, complete los campos requeridos y verifique los valores.');
+            return;
+        }
+
+        // Crear un objeto con los datos del producto
+        var detalleFactura = {
+            IdProducto: parseInt(idProducto), // Asegurarse de convertir a entero si es necesario
+            Cantidad: cantidad,
+            Precio: precio,
+            Descuento: descuento,
+            Total: total
+        };
+
+        // Agregar el detalle de la factura al formulario de la página
+        var index = $("#productosSeleccionados tr").length; // Obtén el índice de la nueva fila
+        var nuevaFila = `
+                        <tr>
+                            <td>${idProducto}</td>
+                            <td>${nombre}</td>
+                            <td>${precio.toFixed(2)}</td>
+                            <td>${cantidad}</td>
+                            <td>${subtotal.toFixed(2)}</td>
+                            <td>${descuento.toFixed(2)}</td>
+                            <td>${iva.toFixed(2)}</td>
+                            <td>${total.toFixed(2)}</td>
+                            <td>
+                                        <input type="hidden" asp-for="Factura.DetallesFactura.IdProducto" value="${idProducto}" />
+                                        <input type="hidden" asp-for="Factura.DetallesFactura.Cantidad" value="${cantidad}" />
+                                         <input type="hidden" asp-for="Factura.DetallesFactura.Precio" value="${precio}" />
+                                         <input type="hidden" asp-for="Factura.DetallesFactura.Descuento" value="${descuento}" />
+                                         <input type="hidden" asp-for="Factura.DetallesFactura.Total" value="${total}" />
+
+                                <button class="btn btn-danger btn-sm" type="button" onclick="eliminarProducto(this)">Eliminar</button>
+                            </td>
+                        </tr>
+                    `;
+
+        // Agregar la nueva fila a la tabla de productos seleccionados
+        $("#productosSeleccionados").append(nuevaFila);
+
+        // Limpiar campos del producto después de agregarlo
+        $("#IdProducto").val("");
+        $("#NombreProducto").val("");
+        $("#PrecioProducto").val("");
+        $("#CantidadProducto").val("1");
+        $("#DescuentoProducto").val("0");
+
+        // Actualizar el total de la factura si es necesario
+        actualizarTotalFactura();
+    }
+
+
+    function eliminarProducto(boton) {
+        $(boton).closest('tr').remove();
+        actualizarTotalFactura();
+    }
+
+    function actualizarTotalFactura() {
+        var totalSubtotal = 0;
+        var totalIVA = 0;
+        var totalDescuento = 0;
+
+        $("#productosSeleccionados tr").each(function () {
+            var subtotal = parseFloat($(this).find("td:eq(4)").text());
+            var descuento = parseFloat($(this).find("td:eq(5)").text());
+            var iva = parseFloat($(this).find("td:eq(6)").text());
+            var total = parseFloat($(this).find("td:eq(7)").text());
+
+            totalSubtotal += subtotal;
+            totalIVA += iva;
+            totalDescuento += descuento;
+
+
+        });
+
+
+        // Calcula el total de la factura incluyendo IVA y descuento
+        var totalFactura = totalSubtotal + totalIVA - totalDescuento;
+
+
+
+        // Actualiza los campos en el formulario
+        $("#SubTotal").val(totalSubtotal.toFixed(2));
+        $("#DescuentoTotal").val(totalDescuento.toFixed(2));
+
+        $("#Iva").val(totalIVA.toFixed(2));
+        $("#Total").val(totalFactura.toFixed(2));
+
+
+    }
+
+</script>
+
+
+
